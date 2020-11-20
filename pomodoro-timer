@@ -1,0 +1,20 @@
+import time
+
+print("Welcome to this Pomodoro Timer")
+time.sleep(2)
+print("Work time will be 25 minutes")
+time.sleep(2)
+print("Breaks will be 5 minutes")
+time.sleep(2)
+num_of_rounds = int(input("Enter the number of rounds before extended break of 30 minutes: "))
+
+if num_of_rounds < 2 or num_of_rounds > 5:
+    print("Number of rounds must be between 2 and 5")
+    num_of_rounds = int(input("Enter the number of rounds before extended break of 30 minutes: "))
+
+for i in range(num_of_rounds):
+    print("Round", i+1)
+    print("Working")
+    time.sleep(1500) # time.sleep suspends execution for given number of seconds
+    print("Break")
+    time.sleep(300)
