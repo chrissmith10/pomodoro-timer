@@ -26,7 +26,7 @@ while True:
 
     restart = input("Do you want to restart?: ")
 
-    if restart = 'Yes' or 'yes' or 'Yeah' or 'yeah' or 'y':
+    if restart == 'Yes' or 'yes' or 'Yeah' or 'yeah' or 'y':
         True
     else:
         False
